@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "692300898474",
+    "project_id": "menumeiker",
+    "storage_bucket": "menumeiker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692300898474:android:527f417e234f9a9e3770d3",
+        "android_client_info": {
+          "package_name": "com.example.menumaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIrdq_Hs9XpzOt-EPRnU-0S2FvmSQY7PI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

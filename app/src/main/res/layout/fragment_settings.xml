@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/material_dynamic_tertiary95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_plus_arroz" />
+
+        <Button
+            android:id="@+id/btn_minus_arroz"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_config_num_arroz"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_arroz" />
+
+        <Button
+            android:id="@+id/btn_plus_arroz"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:text="+"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_config_num_arroz"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_arroz" />
+
+        <TextView
+            android:id="@+id/txt_config_arroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="ARROZ"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_num_legumbres" />
+
+        <TextView
+            android:id="@+id/txt_config_num_arroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_arroz" />
+
+        <Button
+            android:id="@+id/btn_minus_legumbres"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_config_num_legumbres"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_legumbres" />
+
+        <TextView
+            android:id="@+id/txt_config_num_legumbres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_legumbres" />
+
+        <Button
+            android:id="@+id/btn_plus_legumbres"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:text="+"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_config_num_legumbres"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_legumbres" />
+
+        <TextView
+            android:id="@+id/txt_config_legumbres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="LEGUMBRES"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_num_pescado" />
+
+        <Button
+            android:id="@+id/btn_minus_pescado"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_config_num_pescado"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pescado" />
+
+        <TextView
+            android:id="@+id/txt_config_pescado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="PESCADO"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_num_carne" />
+
+        <TextView
+            android:id="@+id/txt_config_num_pescado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pescado" />
+
+        <Button
+            android:id="@+id/btn_plus_pescado"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:text="+"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_config_num_pescado"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pescado" />
+
+        <TextView
+            android:id="@+id/txt_config_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="CARNE"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_num_pasta" />
+
+        <TextView
+            android:id="@+id/txt_config_num_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_carne" />
+
+        <Button
+            android:id="@+id/btn_plus_carne"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:text="+"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_config_num_carne"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_carne" />
+
+        <Button
+            android:id="@+id/btn_minus_carne"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_config_num_carne"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_carne" />
+
+        <TextView
+            android:id="@+id/txt_config_pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="PASTA"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <Button
+            android:id="@+id/btn_minus_pasta"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_config_num_pasta"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pasta" />
+
+        <Button
+            android:id="@+id/btn_plus_pasta"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:text="+"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_config_num_pasta"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pasta" />
+
+        <TextView
+            android:id="@+id/txt_config_num_pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="3"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_config_pasta" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="88dp"
+            android:text="CONFIGURACIÓN"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

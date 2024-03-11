@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/material_dynamic_tertiary90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_category_tuesday" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_category_wednesday" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_category_thursday" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_category_friday" />
+
+        <ImageView
+            android:id="@+id/img_dish_friday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_dish_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_friday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_friday" />
+
+        <TextView
+            android:id="@+id/txt_category_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Pasta)"
+            app:layout_constraintStart_toStartOf="@+id/txt_dish_friday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dish_friday" />
+
+        <TextView
+            android:id="@+id/txt_title_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Viernes"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <ImageView
+            android:id="@+id/img_dish_thursday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_dish_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_thursday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_thursday" />
+
+        <TextView
+            android:id="@+id/txt_category_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Pasta)"
+            app:layout_constraintStart_toStartOf="@+id/txt_dish_thursday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dish_thursday" />
+
+        <TextView
+            android:id="@+id/txt_title_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Jueves"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MENÚ SEMANAL"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/txt_title_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Lunes"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/txt_dish_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_monday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_monday" />
+
+        <TextView
+            android:id="@+id/txt_category_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Pasta)"
+            app:layout_constraintStart_toStartOf="@+id/txt_dish_monday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dish_monday" />
+
+        <ImageView
+            android:id="@+id/img_dish_monday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_title_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Martes"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/txt_dish_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_tuesday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_tuesday" />
+
+        <TextView
+            android:id="@+id/txt_category_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Pasta)"
+            app:layout_constraintStart_toStartOf="@+id/txt_dish_tuesday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dish_tuesday" />
+
+        <ImageView
+            android:id="@+id/img_dish_tuesday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/img_dish_wednesday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_title_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Miércoles"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/txt_dish_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_wednesday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_wednesday" />
+
+        <TextView
+            android:id="@+id/txt_category_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Pasta)"
+            app:layout_constraintStart_toStartOf="@+id/txt_dish_wednesday"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dish_wednesday" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_category_monday" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="GENERAR MENÚ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
